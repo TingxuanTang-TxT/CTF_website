@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Assistance to Autonomy: An Empirical Study of AI Use in a Live Capture-the-Flag (CTF) Competition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-links">
+                <a href="#abstract">Abstract</a>
+                <a href="#survey">Survey</a>
+                <a href="#architecture">Agent</a>
+                <a href="#codebook">Codebook</a>
+                <a href="#leaderboard">Leaderboard</a>
+                <a href="#results">Logs</a>
+                <a href="#bibtex">BibTeX</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="title">From Assistance to Autonomy: An Empirical Study of AI Use in a Live Capture-the-Flag (CTF) Competition</h1>
+            <p class="authors">Anonymous Authors</p>
+        </div>
+    </header>
+
+    <!-- Abstract Section -->
+    <section id="abstract" class="section">
+        <div class="container">
+            <h2>Abstract</h2>
+            <div class="abstract-placeholder">
+                <p>Capture-the-Flag (CTF) competitions are increasingly becoming a testbed for evaluating AI capabilities at solving security tasks, due to their controlled environments and objective success metrics. Existing evaluations generally examine how successful AI is at solving individual CTF challenges, in isolation from the human CTF player. However, in practice, it is equally likely that human CTF players may interact with AI agents and use them in a collaborative manner to solve CTF challenges. This possibility exposes a key knowledge gap: we do not know (RQ1) how humans perceive AI assistance for CTFs, (RQ2) how they actually collaborate with AI during a CTF, and (RQ3) if this collaboration is effective, in comparison with the performance of fully autonomous agents on the same, previously unseen challenges. We address this gap with the first empirical study of AI assistance in a live, onsite CTF, uncovering insights regarding human perception of AI capabilities, human-AI interaction, and the general effectiveness of AI in solving CTF challenges. In a study with 44 participants (out of the total 95 that participated in the CTF), we qualitatively study (i) how participants' perception, trust, and expectations shift before versus after hands-on AI use, and (ii) how participants collaborate with an instrumented AI assistant. Moreover, we also (iii) benchmark four autonomous CTF agents on the same fresh challenge set to compare outcomes with human teams and analyze agent trajectories. We find that, as the competition progresses, teams increasingly hand the AI assistant more agency by delegating larger subtasks to it. Yet solve rates are often constrained not by what the underlying models can do, but by the human side of the loop: effective prompting and context specification become the primary bottleneck. Remarkably, autonomous agents that can self-direct their prompting and tool use bypass this bottleneck and outperform most human teams on the same challenges; the top-performing agent would place a close second on the human leaderboard. We conclude with implications for the future design of CTF competitions and for building effective human-in-the-loop AI systems for security.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Survey Section -->
+    <section id="survey" class="section bg-light">
+        <div class="container">
+            <h2>Survey Materials</h2>
+
+            <div class="survey-section">
+                <h3>Pre-Survey</h3>
+                <p>[Pre-survey PDF will be linked here]</p>
+            </div>
+
+            <div class="survey-section">
+                <h3>Post-Survey</h3>
+                <p>[Post-survey PDF will be linked here]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agent Section -->
+    <section id="architecture" class="section">
+        <div class="container">
+            <h2>Agent</h2>
+
+            <div class="architecture-content">
+                <div class="architecture-figure">
+                    <img src="architecture-diagram.png" alt="Agent Diagram" />
+                </div>
+
+                <div class="architecture-description">
+                    <p>To study human–AI collaboration in live CTF competitions, we design and deploy CTFriend, an agentic assistant tailored for CTF problem solving. CTFriend is not intended to function as an automatic CTF solver; instead, it provides a controlled and observable collaboration platform that supports CTF participants in using AI assistant during competitions, while enabling researchers to observe and analyze human–AI interaction behaviors systematically.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Codebook Section -->
+    <section id="codebook" class="section bg-light">
+        <div class="container">
+            <h2>Codebook</h2>
+            <div class="codebook-content">
+                <p>[Codebook content will be added here]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section id="leaderboard" class="section">
+        <div class="container">
+            <h2>Competition Leaderboard</h2>
+            <p>Performance comparison across different agent configurations and human baselines.</p>
+
+            <div class="leaderboard-table">
+                <table id="leaderboard">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Agent/Team</th>
+                            <th>Challenges Solved</th>
+                            <th>Score</th>
+                            <th>LLM</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboard-body">
+                        <!-- Data will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="section bg-light">
+        <div class="container">
+            <h2>Experiment Logs</h2>
+
+            <div class="logs-section">
+                <h3>Claude Code</h3>
+                <p>[Claude Code experiment logs will be added here]</p>
+            </div>
+
+            <div class="logs-section">
+                <h3>NYU Autonomous Agent</h3>
+                <p>[NYU Autonomous Agent experiment logs will be added here]</p>
+            </div>
+
+            <div class="logs-section">
+                <h3>Cybench Framework</h3>
+                <p>[Cybench Framework experiment logs will be added here]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BibTeX Section -->
+    <section id="bibtex" class="section">
+        <div class="container">
+            <h2>BibTeX Citation</h2>
+            <p>If you find this work useful, please cite our paper:</p>
+
+            <div class="bibtex-container">
+                <pre id="bibtex-code"><code>@article{anonymous2026ctf,
+  title={From Assistance to Autonomy: An Empirical Study of AI Use in a Live Capture-the-Flag (CTF) Competition},
+  author={Anonymous Authors},
+  journal={Under Review},
+  year={2026}
+}</code></pre>
+                <button class="copy-btn" onclick="copyBibtex()">Copy to Clipboard</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Anonymous Authors. All rights reserved.</p>
+            <p>This website accompanies a paper currently under review.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
