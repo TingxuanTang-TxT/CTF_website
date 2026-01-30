@@ -293,11 +293,11 @@ html {
 }
 
 .architecture-description p {
-    color: var(--text-muted);
-    font-style: italic;
-    margin: 0;
-    font-family: 'Courier New', monospace;
-    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-style: normal;
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+    line-height: 1.8;
 }
 
 /* Leaderboard */
