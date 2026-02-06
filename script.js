@@ -6,7 +6,7 @@ const leaderboardData = [
     { rank: 4, name: "Claude Code", solved: 11, successRate: 4600, llm: "Sonnet-4.5" },
     { rank: 5, name: "Human Team 2", solved: 11, successRate: 4600, llm: "N/A" },
     { rank: 6, name: "Human team 3", solved: 11, successRate: 4400, llm: "N/A" },
-    { rank: 7, name: "Proprietary Agent", solved: 10, successRate: 4300, llm: "Opus-4.5"},
+    { rank: 7, name: "Proprietary Agent", solved: 10, successRate: 4300, llm: "Opus-4.1"},
     { rank: 8, name: "Human Team 4", solved: 10, successRate: 4100, llm: "N/A" },
 ];
 
