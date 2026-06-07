@@ -12,11 +12,14 @@
         <div class="container">
             <div class="nav-links">
                 <a href="#abstract">Abstract</a>
-                <a href="#survey">Survey</a>
-                <a href="#architecture">Agent</a>
-                <a href="#codebook">Codebook</a>
+                <a href="#ctf-challenges">CTF Challenges</a>
+                <a href="#architecture">CTFriend</a>
                 <a href="#leaderboard">Leaderboard</a>
+                <a href="#survey">Survey</a>
+                <a href="#codebook">Codebook</a>
                 <a href="#expertise-score">Expertise-Score</a>
+                <a href="#claude-code-prompt">Claude Code Prompt</a>
+                <a href="#agent-performance">Agent Performance Analysis</a>
                 <a href="#bibtex">BibTeX</a>
             </div>
         </div>
@@ -26,7 +29,6 @@
     <header class="header">
         <div class="container">
             <h1 class="title">From Assistance to Autonomy:<br>An Empirical Study of AI Use in a Live Capture-the-Flag (CTF) Competition</h1>
-            <p class="authors">Anonymous Authors</p>
         </div>
     </header>
 
@@ -77,46 +79,73 @@
         </div>
     </section>
 
-    <!-- Survey Section -->
-    <section id="survey" class="section bg-light">
+    <!-- CTF Challenges Section -->
+    <section id="ctf-challenges" class="section bg-light">
         <div class="container">
-            <h2>Survey Materials</h2>
-
-            <div class="survey-section">
-                <h3>Pre-Survey</h3>
-                <iframe 
-                    src="pdfs/Pre-Survey.pdf"
-                    width="100%"
-                    height="600px">
-                </iframe>
-                <p>
-                    <a href="pdfs/Pre-Survey.pdf" target="_blank">
-                        Open or download Pre-Survey PDF
-                    </a>
-                </p>
+            <h2>CTF Challenges</h2>
+            <p>Challenge distribution and solving count by human teams.</p>
+            <div class="leaderboard-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Challenge Category</th>
+                            <th># Challenges</th>
+                            <th>Total Points</th>
+                            <th># Teams Solved</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Reverse Engineering (rev)</td>
+                            <td>3</td>
+                            <td>1,300</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>Cryptography (crypto)</td>
+                            <td>3</td>
+                            <td>1,800</td>
+                            <td>27</td>
+                        </tr>
+                        <tr>
+                            <td>Forensics (for)</td>
+                            <td>5</td>
+                            <td>1,700</td>
+                            <td>38</td>
+                        </tr>
+                        <tr>
+                            <td>Web</td>
+                            <td>2</td>
+                            <td>800</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Other</td>
+                            <td>4</td>
+                            <td>2,100</td>
+                            <td>19</td>
+                        </tr>
+                        <tr style="font-weight: 700; border-top: 2px solid var(--border-color);">
+                            <td><strong>Total</strong></td>
+                            <td><strong>17</strong></td>
+                            <td><strong>7,700</strong></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-
-            <div class="survey-section">
-                <h3>Post-Survey</h3>
-                <iframe 
-                    src="pdfs/Post-Survey.pdf"
-                    width="100%"
-                    height="600px">
-                </iframe>
-                <p>
-                    <a href="pdfs/Post-Survey.pdf" target="_blank">
-                        Open or download Post-Survey PDF
-                    </a>
-                </p>
-            </div>
-
+            <p style="margin-top: 1rem;">
+                <a href="https://github.com/TingxuanTang-TxT/TribeCTF-2025-Challenges" target="_blank">
+                    View CTF Challenges on GitHub
+                </a>
+            </p>
         </div>
     </section>
 
-            <!-- Agent Section -->
-            <section id="architecture" class="section">
-                <div class="container">
-                    <h2>Agent</h2>
+    <!-- CTFriend Section -->
+    <section id="architecture" class="section">
+        <div class="container">
+            <h2>CTFriend</h2>
 
             <div class="architecture-content">
                 <div class="architecture-figure">
@@ -132,7 +161,7 @@
                         <li><b>Grafana + Promethus Monitor Dashboards</b></li>
                     </ul>
                 </div>
-                
+
             </div>
             <a href="https://github.com/ctfriend2026/CTFriend" target="_blank">
                 Visit the CTFriend GitHub.
@@ -140,43 +169,8 @@
         </div>
     </section>
 
-    <!-- Codebook Section -->
-    <section id="codebook" class="section bg-light">
-        <div class="container">
-            <h2>Codebook</h2>
-            <div class="codebook-section">
-                <h3>Post-Confirmation Code System</h3>
-                <iframe 
-                    src="pdfs/Post-Confirmation-Code-System.pdf"
-                    width="100%"
-                    height="600px">
-                </iframe>
-                <p>
-                    <a href="pdfs/Post-Confirmation-Code-System.pdf" target="_blank">
-                        Open or download Post-Confirmation Code System PDF
-                    </a>
-                </p>
-            </div>
-
-            <div class="codebook-section">
-                <h3>Post-Exploration Code System</h3>
-                <iframe 
-                    src="pdfs/Post-Exploration-Code-System.pdf"
-                    width="100%"
-                    height="600px">
-                </iframe>
-                <p>
-                    <a href="pdfs/Post-Exploration-Code-System.pdf" target="_blank">
-                        Open or download Post-Exploration Code System PDF
-                    </a>
-                </p>
-            </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Leaderboard Section -->
-    <section id="leaderboard" class="section">
+    <section id="leaderboard" class="section bg-light">
         <div class="container">
             <h2>Competition Leaderboard</h2>
             <p>Performance comparison across different agent configurations and human baselines.</p>
@@ -200,6 +194,87 @@
         </div>
     </section>
 
+    <!-- Survey Section -->
+    <section id="survey" class="section">
+        <div class="container">
+            <h2>Survey Materials</h2>
+
+            <div class="survey-section">
+                <h3>Pre-Survey</h3>
+                <iframe
+                    src="pdfs/Pre-Survey.pdf"
+                    width="100%"
+                    height="400px">
+                </iframe>
+                <p>
+                    <a href="pdfs/Pre-Survey.pdf" target="_blank">
+                        Open or download Pre-Survey PDF
+                    </a>
+                </p>
+                <p>
+                    <a href="https://wmsas.qualtrics.com/jfe/form/SV_0Pz4iOncfM990uW" target="_blank">
+                        Take the Pre-Survey
+                    </a>
+                </p>
+            </div>
+
+            <div class="survey-section">
+                <h3>Post-Survey</h3>
+                <iframe
+                    src="pdfs/Post-Survey.pdf"
+                    width="100%"
+                    height="400px">
+                </iframe>
+                <p>
+                    <a href="pdfs/Post-Survey.pdf" target="_blank">
+                        Open or download Post-Survey PDF
+                    </a>
+                </p>
+                <p>
+                    <a href="https://wmsas.qualtrics.com/jfe/form/SV_4In9ace9hRhOwPc" target="_blank">
+                        Take the Post-Survey
+                    </a>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Codebook Section -->
+    <section id="codebook" class="section bg-light">
+        <div class="container">
+            <h2>Codebook</h2>
+            <div class="codebook-section">
+                <h3>Post-Confirmation Code System</h3>
+                <iframe
+                    src="pdfs/Post-Confirmation-Code-System.pdf"
+                    width="100%"
+                    height="400px">
+                </iframe>
+                <p>
+                    <a href="pdfs/Post-Confirmation-Code-System.pdf" target="_blank">
+                        Open or download Post-Confirmation Code System PDF
+                    </a>
+                </p>
+            </div>
+
+            <div class="codebook-section">
+                <h3>Post-Exploration Code System</h3>
+                <iframe
+                    src="pdfs/Post-Exploration-Code-System.pdf"
+                    width="100%"
+                    height="400px">
+                </iframe>
+                <p>
+                    <a href="pdfs/Post-Exploration-Code-System.pdf" target="_blank">
+                        Open or download Post-Exploration Code System PDF
+                    </a>
+                </p>
+            </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Expertise-Score -->
     <section id="expertise-score" class="section">
         <div class="container">
@@ -218,8 +293,31 @@
         </div>
     </section>
 
+    <!-- Claude Code Prompt Section -->
+    <section id="claude-code-prompt" class="section bg-light">
+        <div class="container">
+            <h2>Claude Code Prompt</h2>
+            <div style="text-align: center; margin-top: 1.5rem;">
+                <img src="CLaudeCode_prompt.png" alt="Claude Code Prompt versions" style="max-width: 55%; height: auto;">
+                <p style="margin-top: 1rem;">The figure shows the six versions of prompts used in Claude Code experiment in details.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agent Performance Analysis Section -->
+    <section id="agent-performance" class="section">
+        <div class="container">
+            <h2>Agent Performance Analysis</h2>
+            <p>
+                <a href="https://docs.google.com/document/d/19e7mu1KEoYAmjQ6VnTfrIdpLRptBEmhDmEYo4t_-ooU/edit?tab=t.0" target="_blank">
+                    View Agent Performance Analysis Document
+                </a>
+            </p>
+        </div>
+    </section>
+
     <!-- BibTeX Section -->
-    <section id="bibtex" class="section">
+    <section id="bibtex" class="section bg-light">
         <div class="container">
             <h2>BibTeX Citation</h2>
             <p>If you find this work useful, please cite our paper:</p>

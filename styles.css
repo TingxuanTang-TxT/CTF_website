@@ -52,14 +52,14 @@ html {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(12px) saturate(180%);
     border-bottom: 2px solid var(--border-color);
-    padding: 1rem 0;
+    padding: 0.6rem 0;
     z-index: 1000;
     box-shadow: var(--shadow);
 }
 
 .nav-links {
     display: flex;
-    gap: 3rem;
+    gap: 1.75rem;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -68,11 +68,11 @@ html {
     color: var(--text-secondary);
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     transition: all 0.3s ease;
-    padding: 0.5rem 0;
+    padding: 0.35rem 0;
     position: relative;
 }
 
@@ -102,7 +102,7 @@ html {
 /* Header */
 .header {
     text-align: center;
-    padding: 6rem 0 5rem;
+    padding: 3.5rem 0 3rem;
     background: linear-gradient(135deg, #ff6b35 0%, #f77f00 50%, #004e89 100%);
     position: relative;
     overflow: hidden;
@@ -126,9 +126,9 @@ html {
 }
 
 .title {
-    font-size: 3.5rem;
+    font-size: 2.4rem;
     font-weight: 900;
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
     line-height: 1.2;
     max-width: 1100px;
     margin-left: auto;
@@ -159,7 +159,7 @@ html {
 
 /* Sections */
 .section {
-    padding: 5rem 0;
+    padding: 3rem 0;
     position: relative;
 }
 
@@ -168,13 +168,13 @@ html {
 }
 
 .section h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: 800;
-    margin-bottom: 3rem;
+    margin-bottom: 1.75rem;
     color: var(--text-color);
     letter-spacing: -0.02em;
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 1.25rem;
     border-left: 4px solid var(--primary-color);
 }
 
@@ -186,9 +186,9 @@ html {
 }
 
 .section h3 {
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     font-weight: 700;
-    margin: 2.5rem 0 1.5rem 0;
+    margin: 1.75rem 0 1rem 0;
     color: var(--secondary-color);
     letter-spacing: -0.01em;
     font-family: 'Courier New', monospace;
@@ -201,27 +201,27 @@ html {
 }
 
 .section p {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
     color: var(--text-secondary);
     font-size: 1.05rem;
     line-height: 1.8;
 }
 
 .section ul {
-    margin: 1.5rem 0 1.5rem 2rem;
+    margin: 1rem 0 1rem 1.5rem;
     color: var(--text-secondary);
 }
 
 .section li {
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     font-size: 1.05rem;
     line-height: 1.7;
 }
 
 /* Abstract Placeholder */
 .abstract-placeholder {
-    margin: 2rem 0;
-    padding: 3rem;
+    margin: 1.25rem 0;
+    padding: 2rem;
     background: var(--bg-card);
     border-radius: 4px;
     text-align: justify;
@@ -231,7 +231,7 @@ html {
 }
 
 .abstract-placeholder p {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
     color: var(--text-secondary);
     font-size: 1.05rem;
     line-height: 1.8;
@@ -240,11 +240,11 @@ html {
 /* Architecture Content Layout */
 .architecture-content {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     align-items: flex-start;
-    margin: 3rem 0;
+    margin: 1.75rem 0;
     background: var(--bg-card);
-    padding: 2.5rem;
+    padding: 1.75rem;
     border-radius: 4px;
     border: 2px solid var(--border-color);
     box-shadow: var(--shadow-lg);
@@ -320,10 +320,10 @@ thead {
 }
 
 th {
-    padding: 1.25rem;
+    padding: 0.85rem 1rem;
     text-align: left;
     font-weight: 700;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     color: #ffffff;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -331,9 +331,9 @@ th {
 }
 
 td {
-    padding: 1.25rem;
+    padding: 0.85rem 1rem;
     border-bottom: 1px solid var(--border-color);
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     color: var(--text-secondary);
     font-family: 'Courier New', monospace;
 }
@@ -388,9 +388,9 @@ tbody tr:last-child td {
 /* Experiment Logs Section */
 .logs-section {
     background: var(--bg-card);
-    padding: 2.5rem;
+    padding: 1.75rem;
     border-radius: 4px;
-    margin: 2rem 0;
+    margin: 1.25rem 0;
     border: 2px solid var(--border-color);
     border-left: 4px solid var(--primary-color);
     box-shadow: var(--shadow);
@@ -432,9 +432,9 @@ tbody tr:last-child td {
 /* Survey Section */
 .survey-section {
     background: var(--bg-card);
-    padding: 2.5rem;
+    padding: 1.75rem;
     border-radius: 4px;
-    margin: 2rem 0;
+    margin: 1.25rem 0;
     border: 2px solid var(--border-color);
     border-left: 4px solid var(--secondary-color);
     box-shadow: var(--shadow);
@@ -466,8 +466,8 @@ tbody tr:last-child td {
     background: var(--bg-card);
     border-radius: 4px;
     border: 2px solid var(--border-color);
-    padding: 2.5rem;
-    margin: 2.5rem 0;
+    padding: 1.75rem;
+    margin: 1.75rem 0;
     position: relative;
     box-shadow: var(--shadow-lg);
 }
@@ -537,8 +537,8 @@ tbody tr:last-child td {
     background: linear-gradient(135deg, var(--text-color), var(--text-secondary));
     color: #ffffff;
     text-align: center;
-    padding: 3rem 0;
-    margin-top: 5rem;
+    padding: 2rem 0;
+    margin-top: 3rem;
     border-top: 4px solid var(--primary-color);
     position: relative;
 }
