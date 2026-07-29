@@ -1,6 +1,6 @@
 // Leaderboard Data
 const leaderboardData = [
-    { rank: 1, name: "Proprietary Agent (HIL)", solved: 14, successRate: 5700, llm: "Sonnet-4.5" },
+    { rank: 1, name: "Proprietary Agent (with Human-in-the-Loop)", solved: 14, successRate: 5700, llm: "Sonnet-4.5" },
     { rank: 2, name: "Human Team 1", solved: 13, successRate: 5400, llm: "N/A" },
     { rank: 3, name: "Proprietary Agent", solved: 12, successRate: 4900, llm: "Sonnet-4.5" },
     { rank: 4, name: "Claude Code", solved: 11, successRate: 4600, llm: "Sonnet-4.5" },
